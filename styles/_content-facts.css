@@ -1,0 +1,99 @@
+/* VARS */
+* {
+  box-sizing: border-box;
+}
+.content-facts {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/bg/city1_bg.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.content-facts:hover {
+  background-image: url(../img/bg/city2_bg.png);
+}
+.content-facts:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #062033;
+  opacity: 0.8;
+}
+.content-facts .container {
+  padding-top: 93px;
+  position: relative;
+  z-index: 1;
+}
+.content-facts .container .container-facts {
+  text-align: center;
+  color: #0eb493;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.56px;
+  margin: 0;
+  margin-bottom: 19px;
+}
+.content-facts .container .container-heartIcon {
+  text-align: center;
+  position: relative;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.content-facts .container .container-heartIcon:before {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  top: 7px;
+  left: 473px;
+}
+.content-facts .container .container-heartIcon:after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  top: 7px;
+  right: 473px;
+}
+.content-facts .container .container-statistic__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 63px;
+  padding-right: 68px;
+}
+.content-facts .container .container-statistic__wrapper .statictic-block {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-facts .container .container-statistic__wrapper .statictic-block .statictic-block_icon {
+  margin-bottom: 34px;
+}
+.content-facts .container .container-statistic__wrapper .statictic-block .statictic-block_info .statictic-block_info_counter {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.content-facts .container .container-statistic__wrapper .statictic-block .statictic-block_info .statictic-block_info_title {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}

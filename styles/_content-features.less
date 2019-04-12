@@ -1,0 +1,99 @@
+/* VARS */
+@import "../styles/_variables";
+
+.content-features{
+    width: 100%;
+    min-height: 460px;
+    background-color: #f4f7f9;
+    .container{
+        padding-top: 69px;
+        .container-features{
+            text-align: center;
+            color: @accent-color;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.56px;
+            margin: 0;
+            margin-bottom: 22px;
+        }
+        .container-heartIcon{
+            text-align: center;
+            position: relative;
+            align-items: center;
+            margin-bottom: 58px;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 90px;
+                height: 1px;
+                background-color: #062033;
+                opacity: 0.1;
+                top: 7px;
+                left: 473px;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                width: 90px;
+                height: 1px;
+                background-color: #062033;
+                opacity: 0.1;
+                top: 7px;
+                right: 473px;
+            }
+        }
+        .service-wrapper{
+            padding-left: 13px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 64px;
+            .service-wrapper__branding, .service-wrapper__development, .service-wrapper__consulting{
+                display: flex;
+                margin-bottom: 10px;
+                .service-wrapper__branding_image, .service-wrapper__development_image, .service-wrapper__consulting_image{
+                    margin-right: 17px;
+                }
+                .service-wrapper__branding_info, .service-wrapper__development_info, .service-wrapper__consulting_info{
+                    h3{
+                        margin: 0;
+                        color: #062033;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 16px;
+                    }
+                    p{
+                        margin: 0;
+                        opacity: 0.7;
+                        color: #062033;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+        .content-features_container_carousel{
+            display: flex;
+            justify-content: center;
+            .circle-1, .circle-2, .circle-3{
+                width: 6px;
+                height: 6px;
+                border: 1px solid #062033;
+                opacity: 0.2;
+                border-radius: 50%;
+                margin-right: 15px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #062033;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+

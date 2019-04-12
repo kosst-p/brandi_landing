@@ -1,0 +1,122 @@
+/* VARS */
+* {
+  box-sizing: border-box;
+}
+.content-meetOurTeam {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 120px;
+}
+.content-meetOurTeam .container {
+  padding-top: 69px;
+}
+.content-meetOurTeam .container .container-meetOurTeam {
+  text-align: center;
+  color: #0eb493;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.56px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.content-meetOurTeam .container .container-heartIcon {
+  text-align: center;
+  position: relative;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.content-meetOurTeam .container .container-heartIcon:before {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 1px;
+  background-color: #062033;
+  opacity: 0.1;
+  top: 7px;
+  left: 473px;
+}
+.content-meetOurTeam .container .container-heartIcon:after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 1px;
+  background-color: #062033;
+  opacity: 0.1;
+  top: 7px;
+  right: 473px;
+}
+.content-meetOurTeam .container .container-meetOurTeam-info {
+  margin: 0;
+  opacity: 0.8;
+  color: #062033;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 105px;
+}
+.content-meetOurTeam .container .container__team-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 83px;
+}
+.content-meetOurTeam .container .container__team-wrapper .worker-photo {
+  position: relative;
+  margin-bottom: 13px;
+}
+.content-meetOurTeam .container .container__team-wrapper .worker-photo img {
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+.content-meetOurTeam .container .container__team-wrapper .worker-photo img:hover {
+  filter: none;
+}
+.content-meetOurTeam .container .container__team-wrapper .worker-photo .worker-photo__popup {
+  opacity: 0;
+}
+.content-meetOurTeam .container .container__team-wrapper .worker-photo:hover .worker-photo__popup {
+  opacity: 0.95;
+  transition: ease-in 0.8s;
+}
+.content-meetOurTeam .container .container__team-wrapper .worker-name {
+  text-align: center;
+  color: #062033;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.content-meetOurTeam .container .container__team-wrapper .worker-position {
+  text-align: center;
+  opacity: 0.56;
+  color: #062033;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.content-meetOurTeam .container .content-features_container_carousel {
+  display: flex;
+  justify-content: center;
+}
+.content-meetOurTeam .container .content-features_container_carousel .circle-1,
+.content-meetOurTeam .container .content-features_container_carousel .circle-2,
+.content-meetOurTeam .container .content-features_container_carousel .circle-3 {
+  width: 6px;
+  height: 6px;
+  border: 1px solid #062033;
+  opacity: 0.2;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.content-meetOurTeam .container .content-features_container_carousel .circle-1:hover,
+.content-meetOurTeam .container .content-features_container_carousel .circle-2:hover,
+.content-meetOurTeam .container .content-features_container_carousel .circle-3:hover {
+  background-color: #062033;
+  opacity: 1;
+}

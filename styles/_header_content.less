@@ -1,0 +1,99 @@
+.header_content{
+    position: relative;
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 382px;
+        .container_header-title{
+            color: #ffffff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 62px;
+            font-weight: 300;
+            span{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 700;
+            }
+        }
+        .container_header-desc{
+            opacity: 0.9;
+            color: #ffffff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 22px;
+            span{
+                color: #0feb9e;
+            }
+        }
+        .container_header-proff{
+            opacity: 0.9;
+            color: #ffffff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            position: relative;
+            margin-bottom: 109px;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 28px;
+                height: 1px;
+                background-color: #0feb9e;
+                top: 11px;
+                left: -59px;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 28px;
+                height: 1px;
+                background-color: #0feb9e;
+                top: 11px;
+                right: -59px;
+            }
+        }
+        .container_header-socialIcons{
+            a{
+                text-decoration: none;
+                i{
+                    font-size: 20px;
+                    color: #ffffff;
+                    opacity: 0.3;
+                    margin-right: 7px;
+                    &:hover, &:active{
+                        color: #ffffff;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .header_content_carousel{
+        padding-right: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        height: 52px;
+        top: 304px;
+        right: 0;
+        .circle-1, .circle-2, .circle-3{
+            width: 6px;
+            height: 6px;
+            border: 1px solid #ffffff;
+            opacity: 0.2;
+            border-radius: 50%;
+            cursor: pointer;
+            &:hover{
+                background-color: #ffffff;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+

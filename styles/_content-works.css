@@ -1,0 +1,137 @@
+/* VARS */
+* {
+  box-sizing: border-box;
+}
+.content-works {
+  width: 100%;
+  background-color: #fff;
+}
+.content-works .container {
+  padding-top: 92px;
+}
+.content-works .container .container-works {
+  text-align: center;
+  color: #0eb493;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.56px;
+  margin: 0;
+  margin-bottom: 19px;
+}
+.content-works .container .container-heartIcon {
+  text-align: center;
+  position: relative;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.content-works .container .container-heartIcon:before {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 1px;
+  background-color: #062033;
+  opacity: 0.1;
+  top: 7px;
+  left: 473px;
+}
+.content-works .container .container-heartIcon:after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 1px;
+  background-color: #062033;
+  opacity: 0.1;
+  top: 7px;
+  right: 473px;
+}
+.content-works .container .container-works-info {
+  margin: 0;
+  opacity: 0.8;
+  color: #062033;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.content-works .container .content-works_navigation_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 33px;
+}
+.content-works .container .content-works_navigation_wrapper button {
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #062033;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.content-works .container .content-works_navigation_wrapper button:last-child {
+  margin-right: 0;
+}
+.content-works .container .content-works_navigation_wrapper button:hover {
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #0eb493;
+  border-radius: 8px;
+  transition: 0.8s;
+}
+.content-works .container-works_images-wrapper {
+  margin-bottom: 26px;
+}
+.content-works .container-works_images-wrapper .containerIMG {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items .image-items__popup {
+  opacity: 0;
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:hover .image-items__popup {
+  opacity: 0.9;
+  transition: ease-in 0.8s;
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:nth-child(1) {
+  background-image: url(../img/pictures/kongo_img.png);
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:nth-child(2) {
+  background-image: url(../img/pictures/pelican_img.png);
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:nth-child(2):hover {
+  background-image: url(../img/pictures/cartoonman_img.png);
+  transition: ease-in 0.8s;
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:nth-child(3) {
+  background-image: url(../img/pictures/river_img.png);
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:nth-child(4) {
+  background-image: url(../img/pictures/city_img.png);
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:nth-child(5) {
+  background-image: url(../img/pictures/soldiers_img.png);
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:nth-child(6) {
+  background-image: url(../img/pictures/balls_img.png);
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:nth-child(7) {
+  background-image: url(../img/pictures/mind_img.png);
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:nth-child(8) {
+  background-image: url(../img/pictures/cartoondog_img.png);
+}
+.content-works .container-works_images-wrapper .containerIMG .image-items:nth-child(8):hover {
+  background-image: url(../img/pictures/seahorse_img.png);
+  transition: ease-in 0.8s;
+}

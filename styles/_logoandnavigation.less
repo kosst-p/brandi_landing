@@ -1,0 +1,82 @@
+.logo-nav-bar-wrapper{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #101636;
+        opacity: 0.2;
+        z-index: 0;
+    }
+    .container{
+        display:flex;
+        justify-content: space-between;
+        .logo-wrapper{
+            z-index: 1;
+            .logo-wrapper__name{
+                display: inline-block;
+                padding-top: 22px;
+                margin-right: 15px;
+                a{
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-family: 'Pacifico';
+                    font-size: 28px;
+                    font-weight: 400;
+                    letter-spacing: 0.4px;
+                    
+                    span{
+                        opacity: 0;
+                    }
+                }
+            }
+            .logo-wrapper__desc{
+                color: #ffffff;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 13px;
+                font-weight: 300;
+                letter-spacing: 0.65px;
+                border-left: 1px solid #32b0ee;
+                opacity: 0.2;
+                display: inline-block;
+                padding-left: 22px;;
+            }
+        }
+        .nav-bar-wrapper{
+            display: flex;
+            justify-content: space-between;
+            list-style:none;
+            align-items: center;
+            margin: 0;
+            z-index: 1;
+            li{
+                margin-right: 33px;
+                padding-top: 30px;
+                padding-bottom: 22px;
+                border-top: 2px solid rgba(50, 176, 238, 0);
+                &:last-child{
+                    margin-right: 0;
+                }
+                &:hover{
+                    border-top: 2px solid rgba(50, 176, 238, 1);
+                }
+                a{
+                    font-family: 'Open Sans', sans-serif;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: 0.65px;
+                    &:hover{
+                        color: #32b0ee;
+                    }
+                }
+            }
+        }
+    }
+}

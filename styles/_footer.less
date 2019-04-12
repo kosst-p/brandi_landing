@@ -1,0 +1,183 @@
+/* VARS */
+@import "../styles/_variables";
+
+.footer{
+    width: 100%;
+    height: 405px;
+    background-color: #21b697;
+    border-top: 5px solid #062033;
+    opacity: 0.9;
+    .container{
+        position: relative;
+        z-index: 1;
+        .footer-content-wrapper{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 100px;
+            padding-right: 45px;
+            .footer-title-block{
+                margin-right: 13px;
+                h2{
+                    margin: 0;
+                    color: #ffffff;
+                    font-family: 'Pacifico', cursive;
+                    font-size: 28px;
+                    font-weight: 400;
+                    letter-spacing: 1.4px;
+                    margin-bottom: 33px;
+                }
+                p{
+                    color: #ffffff;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+            .footer-subscribe-block{
+                padding-top: 9px;
+                h2{
+                    margin: 0;
+                    opacity: 0.8;
+                    color: #ffffff;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin-bottom: 41px;
+                }
+                .subscribeBox{
+                    position: relative;
+                    form{
+                        margin-bottom: 16px;
+                        input{
+                            width: 271px;
+                            height: 46px;
+                            transition: all 0.3s ease;
+                            border: 2px solid #ffffff;
+                            outline: none;
+                            border-radius: 5px;
+                            background-color: #1ea78d;
+                            color: white;
+                            padding-left: 20px;
+                            &:focus{
+                                border-color: #062033;
+                                box-shadow: 0 0 8px 0 #062033;
+                                color: #062033;
+                                background-color: white;
+                            }
+                            &:focus +i{
+                                color: #062033;
+                            }
+                        }
+                        i{
+                            font-size: 20px;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            padding: 14px 14px;
+                            color: white;
+                            transition: all 0.3s ease;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                p{
+                    color: #ffffff;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+            .footer-explore-block{
+                padding-top: 9px;
+                margin-right: 10px;
+                h2{
+                    margin: 0;
+                    opacity: 0.8;
+                    color: #ffffff;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin-bottom: 30px;
+                }
+                .explore-list{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: #ffffff;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 32px;
+                            &:hover{
+                                color: #062033;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-firms-block{
+                padding-top: 63px;
+                margin-right: 39px;
+                .firms-lst{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: #ffffff;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 32px;
+                            &:hover{
+                                color: #062033;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-copyright-block{
+                padding-top: 64px;
+                .copyright-with-heart{
+                    margin-bottom: 49px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #ffffff;
+                    border-left: 1px solid rgb(6, 32, 51, 0.3);
+                    padding-left: 12px;
+                    i{
+                        color: #0feb9e;
+                        display: inline-block;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    span{
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #062033;
+                    }
+                }
+                .copyright-with-year{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #062033;
+                    padding-left: 12px;
+                }
+            }
+        }
+    }
+}

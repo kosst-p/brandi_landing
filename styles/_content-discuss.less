@@ -1,0 +1,271 @@
+/* VARS */
+@import "../styles/_variables";
+
+.content-discuss{
+    width: 100%;
+    height: 640px;
+    .container{
+        height: inherit;
+        padding-top: 92px;
+        .container-discuss{
+            text-align: center;
+            color: @accent-color;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.56px;
+            margin: 0;
+            margin-bottom: 19px;
+        }
+        .container-heartIcon{
+            text-align: center;
+            position: relative;
+            align-items: center;
+            margin-bottom: 27px;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 90px;
+                height: 1px;
+                background-color: #062033;
+                opacity: 0.1;
+                top: 7px;
+                left: 473px;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                width: 90px;
+                height: 1px;
+                background-color: #062033;
+                opacity: 0.1;
+                top: 7px;
+                right: 473px;
+            }
+        }
+        .container-discuss-info{
+            margin: 0;
+            opacity: 0.8;
+            color: #062033;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: center;
+            margin-bottom: 77px;
+        }
+        .container-discuss_feedback_wrapper{
+            display: flex;
+            justify-content: space-between;
+            .discuss_feedback-adressBlock{
+                font-family: 'Open Sans', sans-serif;
+                h2{
+                    margin: 0;
+                    color: #062033;
+                    font-size: 22px;
+                    line-height: 32px;
+                    font-weight: 400;
+                    margin-bottom: 32px;
+                }
+                p{
+                    margin: 0;
+                    font-size: 13px;
+                    color: #6a737b;
+                    line-height: 24px;
+                    font-weight: 400;
+                }
+            }
+            .discuss_feedback-form{
+                padding-top: 3px;
+                .discuss_feedback-form-title{
+                    color: #062033;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin-bottom: 53px;
+                }
+                .discuss_feedback-form-wrapper{
+                    margin-bottom: 31px;
+                    .discuss_feedback-form-wrapper-name{
+                        display: inline-block;
+                        margin-bottom: 50px;
+                        margin-right: 31px;
+                        position: relative;
+                        width: 370px;
+                        height: 31px;
+                        .label-name{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0%;
+                            width: 100%;
+                            height: 100%;
+                            pointer-events: none;
+                            border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+                            .content-name{
+                                opacity: 0.5;
+                                color: #5b646e;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                position: absolute;
+                                bottom: 0px;
+                                left: 0;
+                                transition: all 0.3s ease;
+                            }
+                        }
+                        input{
+                            width: 100%;
+                            height: 100%;
+                            color: @accent-color;
+                            font-family: 'Open Sans', sans-serif;
+                            font-weight: 400;
+                            line-height: 24px;
+                            padding-top: 12px;
+                            padding-left: 42px;
+                            border:none;
+                            outline: none;
+                            &:focus + .label-name .content-name,
+                            &:valid + .label-name .content-name{
+                                transform: translateY(-50%)
+                            }
+                        }
+                    }
+                    .discuss_feedback-form-wrapper-email{
+                        display: inline-block;
+                        position: relative;
+                        width: 370px;
+                        height: 31px;
+                        margin-bottom: 50px;
+                        .label-email{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0%;
+                            width: 100%;
+                            height: 100%;
+                            pointer-events: none;
+                            border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+                            .content-email{
+                                opacity: 0.5;
+                                color: #5b646e;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                position: absolute;
+                                bottom: 0px;
+                                left: 0;
+                                transition: all 0.3s ease;
+                            }
+                        }
+                        input{
+                            width: 100%;
+                            height: 100%;
+                            color: @accent-color;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            padding-top: 12px;
+                            padding-left: 42px;
+                            border:none;
+                            outline: none;
+                            &:focus + .label-email .content-email,
+                            &:valid + .label-email .content-email{
+                                transform: translateY(-50%)
+                            }
+                        }
+                    }
+                    .discuss_feedback-form-wrapper-message{
+                        position: relative;
+                        width: 100%;
+                        height: 31px;
+                        .label-message{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0%;
+                            width: 100%;
+                            height: 100%;
+                            pointer-events: none;
+                            border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+                            .content-message{
+                                opacity: 0.5;
+                                color: #5b646e;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                position: absolute;
+                                bottom: 0px;
+                                left: 0;
+                                transition: all 0.3s ease;
+                            }
+                        }
+                        input{
+                            width: 100%;
+                            height: 100%;
+                            color: @accent-color;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            padding-top: 12px;
+                            padding-left: 58px;
+                            border:none;
+                            outline: none;
+                            &:focus + .label-message .content-message,
+                            &:valid + .label-message .content-message{
+                                transform: translateY(-50%)
+                            }
+                        }
+                    }
+                }
+                .discuss_feedback-form-wrapper-send{
+                    text-align: right;
+                    position: relative;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        position: absolute;
+                        right: 115px;
+                        cursor: pointer;
+                        i{
+                            font-size: 22px;
+                            color: @accent-color;
+                        }
+                    }
+                    span{
+                        color: #000000;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .discuss_feedback-socialIcon{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-top: 16px;
+                padding-right: 17px;
+                padding-bottom: 28px;
+                a{
+                    text-decoration: none;
+                    i{
+                        font-size: 25px;
+                        color: #062033;
+                        opacity: 0.2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  /*     background-color:rgb(251, 255, 0);  */
+}
+.containerIMG {
+  width: 1600px;
+  margin: 0 auto;
+}
+.image-items__popup {
+  width: 100%;
+  height: 100%;
+  background-color: #0eb493;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image-items__popup img {
+  margin-bottom: 24px;
+}
+.image-items__popup h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+.image-items__popup span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.worker-photo__popup {
+  box-sizing: border-box;
+  padding-top: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #0eb493;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+.worker-photo__popup h4 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.worker-photo__popup p {
+  margin: 0;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+.worker-photo__popup .worker-photo__popup-social-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.worker-photo__popup .worker-photo__popup-social-buttons-wrapper .button-twitter,
+.worker-photo__popup .worker-photo__popup-social-buttons-wrapper .button-facebook,
+.worker-photo__popup .worker-photo__popup-social-buttons-wrapper .button-google {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-right: 3px;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+}
+.worker-photo__popup .worker-photo__popup-social-buttons-wrapper .button-twitter a,
+.worker-photo__popup .worker-photo__popup-social-buttons-wrapper .button-facebook a,
+.worker-photo__popup .worker-photo__popup-social-buttons-wrapper .button-google a {
+  text-decoration: none;
+}
+.worker-photo__popup .worker-photo__popup-social-buttons-wrapper .button-twitter i,
+.worker-photo__popup .worker-photo__popup-social-buttons-wrapper .button-facebook i,
+.worker-photo__popup .worker-photo__popup-social-buttons-wrapper .button-google i {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 42px;
+}
