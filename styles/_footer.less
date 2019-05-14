@@ -3,27 +3,38 @@
 
 .footer{
     width: 100%;
-    height: 405px;
+    padding-bottom: 107px;
     background-color: #21b697;
     border-top: 5px solid #062033;
     opacity: 0.9;
     .container{
         position: relative;
         z-index: 1;
+        padding-top: 98px;
         .footer-content-wrapper{
             display: flex;
-            justify-content: space-between;
-            padding-top: 100px;
-            padding-right: 45px;
+            flex-direction: column;
+            text-align: center;
+            flex-wrap: wrap;
+            @media (min-width: 1200px) {
+                flex-direction: row;
+                justify-content: space-between;
+                padding-right: 45px;
+                text-align: left;
+            }
             .footer-title-block{
-                margin-right: 13px;
+                margin-bottom: 30px;
+                @media (min-width: 1200px) {
+                    margin-bottom: 0;
+                    margin-right: 13px;
+                }
                 h2{
                     margin: 0;
                     color: #ffffff;
                     font-family: 'Pacifico', cursive;
                     font-size: 28px;
                     font-weight: 400;
-                    letter-spacing: 1.4px;
+                    letter-spacing: 0.4px;
                     margin-bottom: 33px;
                 }
                 p{
@@ -35,7 +46,11 @@
                 }
             }
             .footer-subscribe-block{
-                padding-top: 9px;
+                margin-bottom: 30px;
+                @media (min-width: 1200px) {
+                    padding-top: 9px;
+                    margin-bottom: 0;
+                }
                 h2{
                     margin: 0;
                     opacity: 0.8;
@@ -44,14 +59,20 @@
                     font-size: 14px;
                     font-weight: 700;
                     line-height: 24px;
-                    margin-bottom: 41px;
+                    margin-bottom: 10px;
+                    @media (min-width: 1200px) {
+                        margin-bottom: 41px;
+                    }
                 }
                 .subscribeBox{
                     position: relative;
                     form{
                         margin-bottom: 16px;
                         input{
-                            width: 271px;
+                            width: 100%;
+                            @media (min-width: 1200px) {
+                                width: 271px;
+                            }
                             height: 46px;
                             transition: all 0.3s ease;
                             border: 2px solid #ffffff;
@@ -91,8 +112,10 @@
                 }
             }
             .footer-explore-block{
-                padding-top: 9px;
-                margin-right: 10px;
+                @media (min-width: 1200px) {
+                    padding-top: 9px;
+                    margin-right: 10px;
+                }
                 h2{
                     margin: 0;
                     opacity: 0.8;
@@ -101,13 +124,22 @@
                     font-size: 14px;
                     font-weight: 700;
                     line-height: 24px;
-                    margin-bottom: 30px;
+                    margin-bottom: 10px;
+                    @media (min-width: 1200px) {
+                        margin-bottom: 30px;
+                    }
                 }
                 .explore-list{
                     list-style: none;
                     margin: 0;
                     padding: 0;
                     li{
+                        display: inline;
+                        padding: 8px;
+                        @media (min-width: 1200px) {
+                            display: block;
+                            padding: 0;
+                        }
                         a{
                             text-decoration: none;
                             color: #ffffff;
@@ -123,13 +155,21 @@
                 }
             }
             .footer-firms-block{
-                padding-top: 63px;
-                margin-right: 39px;
+                @media (min-width: 1200px) {
+                    padding-top: 63px;
+                    margin-right: 39px;
+                }
                 .firms-lst{
                     list-style: none;
                     margin: 0;
                     padding: 0;
                     li{
+                        display: inline;
+                        padding: 8px;
+                        @media (min-width: 1200px) {
+                            display: block;
+                            padding: 0;
+                        }
                         a{
                             text-decoration: none;
                             color: #ffffff;
@@ -153,8 +193,10 @@
                     font-weight: 400;
                     line-height: 24px;
                     color: #ffffff;
-                    border-left: 1px solid rgb(6, 32, 51, 0.3);
-                    padding-left: 12px;
+                    padding-left: 15px;
+                    @media (min-width: 1200px) {
+                        border-left: 1px solid rgb(6, 32, 51, 0.3);
+                    }
                     i{
                         color: #0feb9e;
                         display: inline-block;

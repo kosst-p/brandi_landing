@@ -2,13 +2,27 @@
   box-sizing: border-box;
 }
 .container {
-  width: 1170px;
+  width: 100%;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   /*     background-color:rgb(251, 255, 0);  */
 }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .containerIMG {
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .containerIMG {
+    width: 1600px;
+  }
 }
 .image-items__popup {
   width: 100%;

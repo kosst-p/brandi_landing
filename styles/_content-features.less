@@ -3,10 +3,13 @@
 
 .content-features{
     width: 100%;
-    min-height: 460px;
+    padding-bottom: 56px;
     background-color: #f4f7f9;
     .container{
-        padding-top: 69px;
+        padding-top: 30px;
+        @media (min-width: 768px) {
+            padding-top: 69px;
+        }
         .container-features{
             text-align: center;
             color: @accent-color;
@@ -16,43 +19,54 @@
             text-transform: uppercase;
             letter-spacing: -0.56px;
             margin: 0;
-            margin-bottom: 22px;
+            margin-bottom: 19px;
+            
         }
         .container-heartIcon{
             text-align: center;
             position: relative;
             align-items: center;
-            margin-bottom: 58px;
-            &:before{
-                content: '';
-                position: absolute;
-                width: 90px;
-                height: 1px;
-                background-color: #062033;
-                opacity: 0.1;
-                top: 7px;
-                left: 473px;
+            margin-bottom: 30px;
+            @media (min-width: 768px) {
+                margin-bottom: 58px;
             }
-            &:after{
-                content: '';
-                position: absolute;
-                width: 90px;
-                height: 1px;
-                background-color: #062033;
-                opacity: 0.1;
-                top: 7px;
-                right: 473px;
+            @media (min-width: 1200px) {
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 90px;
+                    height: 1px;
+                    background-color: #062033;
+                    opacity: 0.1;
+                    top: 7px;
+                    left: 473px;
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 90px;
+                    height: 1px;
+                    background-color: #062033;
+                    opacity: 0.1;
+                    top: 7px;
+                    right: 473px;
+                }
             }
         }
         .service-wrapper{
             padding-left: 13px;
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
             flex-wrap: wrap;
-            margin-bottom: 64px;
+            margin-bottom: 67px;
             .service-wrapper__branding, .service-wrapper__development, .service-wrapper__consulting{
                 display: flex;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
+                @media (min-width: 768px){
+                    width: 31%;
+                    margin-bottom: 10px;
+                }
                 .service-wrapper__branding_image, .service-wrapper__development_image, .service-wrapper__consulting_image{
                     margin-right: 17px;
                 }
@@ -81,8 +95,8 @@
             display: flex;
             justify-content: center;
             .circle-1, .circle-2, .circle-3{
-                width: 6px;
-                height: 6px;
+                width: 8px;
+                height: 8px;
                 border: 1px solid #062033;
                 opacity: 0.2;
                 border-radius: 50%;
